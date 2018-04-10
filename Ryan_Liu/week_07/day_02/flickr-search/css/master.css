@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+body {
+  background-color: purple;
+  color: purple;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+img {
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
